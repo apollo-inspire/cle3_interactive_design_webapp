@@ -1,0 +1,12 @@
+.footer {
+    background-color: #212529;
+    display: inline-block;
+    color: white;
+
+    margin: 0 auto;
+
+    padding: 20px 100px;
+
+    width: calc(100% - 2 * 100px);
+    height: auto;
+}

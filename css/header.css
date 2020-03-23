@@ -1,0 +1,56 @@
+:root {
+    --header-size: 145px;
+}
+
+
+header {
+    background-color: #212529;
+    display: block;
+
+    margin: 0 auto;
+
+    --header-padding: 20px;
+    padding: var(--header-padding);
+
+    width: calc(100% - 2 * var(--header-padding));
+    height: auto;
+
+    position: fixed;
+    top: 0;
+    z-index: 2; /* Stay on top */
+
+}
+
+
+
+
+
+.menu {
+    display: flex;
+}
+
+.menu-item {
+    flex-grow: 1;
+    text-align: center;
+    list-style-type: none;
+}
+
+.menu-item > a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 20px;
+    color: white;
+    background-color: #3d3aa6;
+    box-shadow: 4px 4px 5px rgba(0,0,0,0.7);
+}
+
+.menu-item > a:hover {
+    background-color: #423fd7;
+    color: white;
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.7);
+}
+
+
+.logo {
+
+}

@@ -1,0 +1,44 @@
+@import "header.css";
+@import "main.css";
+@import "footer.css";
+
+/*
+* {
+    border: 1px solid red;
+}
+ */
+
+
+
+body {
+    background-color: #000000;
+    color: #d3dede;
+    font-family: 'Arial';
+    margin: 0;
+    padding: 0;
+}
+
+a {
+
+}
+
+.button {
+    /*text-align: center;*/
+    list-style-type: none;
+}
+
+.button > a {
+
+
+    text-decoration: none;
+    display: inline-block;
+    padding: 20px;
+    color: white;
+    background-color: #3d3aa6;
+    box-shadow: 4px 4px 5px rgba(0,0,0,0.7);
+}
+
+
+
+
+
