@@ -56,8 +56,11 @@ main {
     padding: 20px;
 }
 
-.item.list {
+.item-list {
     flex-direction: column;
+    display: block;
+    width: 200px;
+    margin: 20px;
 }
 
 
