@@ -12,6 +12,8 @@
 
 
 <main>
+
+    <h1>Colorpicker</h1>
     <?php include '../../includes/background.php'; ?>
 
     <div class="colorpicker">
@@ -25,6 +27,19 @@
         <a href="yellow" class="button2 color" style="background-color: yellow"></a>
         <a href="orange" class="button2 color" style="background-color: orange"></a>
     </div>
+
+    <form action="connect.php" method="POST">
+        <input type="radio"  value="red" name="color">Rood
+        <input type="radio" value="purple" name="color">Paars
+        <input type="radio" value="dark-blue" name="color">Donkerblauw
+        <input type="radio" value="red" name="color">Blauw
+        <input type="radio" value="red" name="color">Cyaan
+        <input type="radio" value="red" name="color">Groenblauw
+        <input type="radio" value="red" name="color">Groen
+        <input type="radio" value="red" name="color">Geel
+        <input type="radio" value="red" name="color">Oranje
+        <input type="submit" name="colorsubmit">
+    </form>
 
 
 
