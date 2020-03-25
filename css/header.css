@@ -1,5 +1,5 @@
 :root {
-    --header-size: 145px;
+    --header-size: 115px;
 }
 
 
@@ -9,7 +9,7 @@ header {
 
     margin: 0 auto;
 
-    --header-padding: 20px;
+    --header-padding: 5px;
     padding: var(--header-padding);
 
     width: calc(100% - 2 * var(--header-padding));
@@ -23,8 +23,6 @@ header {
 
 
 
-
-
 .menu {
     display: flex;
 }
@@ -34,22 +32,6 @@ header {
     text-align: center;
     list-style-type: none;
 }
-
-.menu-item > a {
-    text-decoration: none;
-    display: inline-block;
-    padding: 20px;
-    color: white;
-    background-color: #3d3aa6;
-    box-shadow: 4px 4px 5px rgba(0,0,0,0.7);
-}
-
-.menu-item > a:hover {
-    background-color: #423fd7;
-    color: white;
-    box-shadow: 4px 4px 10px rgba(0,0,0,0.7);
-}
-
 
 .logo {
 

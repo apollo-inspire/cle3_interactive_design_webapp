@@ -9,7 +9,6 @@
 - [ ]   html
 - [ ]   img
 
-
 - [ ] css
 - [ ] mobile viewport (mobile & web css)
 - [ ]   style.css

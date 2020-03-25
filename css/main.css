@@ -46,14 +46,20 @@ main {
     flex-grow: 1;
     flex-shrink: 1;
     flex-basis: 20%;
-
-    background-color: #494949;
-    box-shadow: 4px 4px 5px rgba(0,0,0,0.5);
-
     margin: 10px;
-    padding: 20px;
 
 }
+
+.item.grid {
+    background-color: #494949;
+    box-shadow: 4px 4px 5px rgba(0,0,0,0.5);
+    padding: 20px;
+}
+
+.item.list {
+    flex-direction: column;
+}
+
 
 .special-item {
 
