@@ -1,5 +1,5 @@
 :root {
-    --header-size: 115px;
+    --header-size: 143px;
 }
 
 
@@ -9,7 +9,7 @@ header {
 
     margin: 0 auto;
 
-    --header-padding: 5px;
+    --header-padding: 0px;
     padding: var(--header-padding);
 
     width: calc(100% - 2 * var(--header-padding));
@@ -28,12 +28,19 @@ header {
 }
 
 .menu-item {
-    flex-grow: 1;
+    /*flex-grow: 1;*/
     text-align: center;
     list-style-type: none;
-    margin: 20px;
+    margin: 10px;
+    font-weight: bold;
+
 }
 
 .logo {
-
+    margin: 5px 50px;
 }
+
+/*.header-room {*/
+/*    height: calc(var(--header-size) + 28px + 20px);*/
+/*    width: 100%;*/
+/*}*/

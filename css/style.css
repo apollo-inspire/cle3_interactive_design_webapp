@@ -1,6 +1,7 @@
 @import "header.css";
 @import "footer.css";
 @import "main.css";
+@import "colorpicker.css";
 
 body {
     background-color: #000000;
@@ -8,7 +9,9 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
+
 }
+
 
 
 .button2 {
@@ -40,12 +43,7 @@ body {
     box-shadow: 4px 4px 10px rgba(0,0,0,0.7);
 }
 
-.button2.color {
-    padding: 0;
-    width: 55px;
-    height: 55px;
-    margin: 5px;
-}
+
 
 .button {
     /*text-align: center;*/
@@ -71,37 +69,3 @@ body {
 }
 
 
-.colorpicker {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-
-#red {
-    background-color: red
-}
-#purple {
-    background-color: purple
-}
-#navy {
-    background-color: navy
-}
-#blue {
-    background-color: blue
-}
-#cyan {
-    background-color: cyan
-}
-#teal {
-    background-color: teal
-}
-#green {
-    background-color: green
-}
-#yellow {
-    background-color: yellow
-}
-#orange {
-    background-color: orange
-}

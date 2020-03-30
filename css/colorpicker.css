@@ -1,0 +1,58 @@
+.colorpicker {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+
+
+.colorpicker-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 190px;
+    background-color: #0a0a0a;
+    padding: 5px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #494949;
+
+    border-radius: 5px;
+
+    box-shadow: 4px 4px 5px rgba(0,0,0,0.5);
+}
+
+.button2.color {
+    padding: 0;
+    width: 55px;
+    height: 55px;
+    margin: 4px;
+}
+
+
+#red {
+    background-color: red
+}
+#purple {
+    background-color: purple
+}
+#navy {
+    background-color: navy
+}
+#blue {
+    background-color: blue
+}
+#cyan {
+    background-color: cyan
+}
+#teal {
+    background-color: teal
+}
+#green {
+    background-color: green
+}
+#yellow {
+    background-color: yellow
+}
+#orange {
+    background-color: orange
+}
