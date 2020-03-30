@@ -35,6 +35,35 @@
     </div>
 
 
+    <div class="colorpicker" style="left:100px">
+        <form action="../../backend/database/insertdb.php" method="POST">
+            <input type="submit" name="colorsubmit" style="margin: 10px;">
+            <div class="colorpicker-container">
+
+                <label class="checkmark-container">
+                    <input type="radio" value="red" name="color" class="button2 color" id="red">
+                    <span class="checkmark button2 color" id="red"></span>
+                </label>
+                <label class="checkmark-container">
+                    <input type="radio" name="radio">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="checkmark-container">
+                    <input type="radio" name="radio">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="checkmark-container">
+                    <input type="radio" name="radio">
+                    <span class="checkmark"></span>
+                </label>
+
+
+            </div>
+        </form>
+    </div>
+
+
+
 
 </main>
 
