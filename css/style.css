@@ -12,15 +12,25 @@ body {
 
 
 .button2 {
-
     border-radius: 5px;
     list-style-type: none;
     text-decoration: none;
+    border: none;
+    text-align: center;
 
-    padding: 20px;
+    display: inline-block;
+    padding: 15px 32px;
+
     color: white;
     background-color: #3d3aa6;
     box-shadow: 4px 4px 5px rgba(0,0,0,0.7);
+
+    cursor: pointer;
+}
+
+.button2:active {
+    background-color: yellow;
+
 }
 
 
@@ -34,6 +44,7 @@ body {
     padding: 0;
     width: 55px;
     height: 55px;
+    margin: 5px;
 }
 
 .button {
@@ -57,4 +68,40 @@ body {
     padding: 20px;
     margin: 20px;
     display: grid;
+}
+
+
+.colorpicker {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+#red {
+    background-color: red
+}
+#purple {
+    background-color: purple
+}
+#navy {
+    background-color: navy
+}
+#blue {
+    background-color: blue
+}
+#cyan {
+    background-color: cyan
+}
+#teal {
+    background-color: teal
+}
+#green {
+    background-color: green
+}
+#yellow {
+    background-color: yellow
+}
+#orange {
+    background-color: orange
 }

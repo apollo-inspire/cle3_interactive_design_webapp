@@ -16,31 +16,21 @@
     <h1>Colorpicker</h1>
     <?php include '../../includes/background.php'; ?>
 
+
     <div class="colorpicker">
-        <a href="red" class="button2 color" style="background-color: red"></a>
-        <a href="purple" class="button2 color" style="background-color: purple"></a>
-        <a href="dark-blue" class="button2 color" style="background-color: darkblue"></a>
-        <a href="blue" class="button2 color" style="background-color: blue"></a>
-        <a href="cyan" class="button2 color" style="background-color: cyan"></a>
-        <a href="teal" class="button2 color" style="background-color: teal"></a>
-        <a href="green" class="button2 color" style="background-color: green"></a>
-        <a href="yellow" class="button2 color" style="background-color: yellow"></a>
-        <a href="orange" class="button2 color" style="background-color: orange"></a>
+        <form action="../../backend/database/insertdb.php" method="POST">
+            <button type="button" value="red" name="color" class="button2 color" id="red"></button>
+            <button type="button" value="purple" name="color" class="button2 color" id="purple"></button>
+            <button type="button" value="blue" name="color" class="button2 color" id="blue"></button>
+            <button type="button" value="navy" name="color" class="button2 color" id="navy"></button>
+            <button type="button" value="cyan" name="color" class="button2 color" id="cyan"></button>
+            <button type="button" value="teal" name="color" class="button2 color" id="teal"></button>
+            <button type="button" value="green" name="color" class="button2 color" id="green"></button>
+            <button type="button" value="yellow" name="color" class="button2 color" id="yellow"></button>
+            <button type="button" value="orange" name="color" class="button2 color" id="orange"></button>
+            <input type="submit" name="colorsubmit">
+        </form>
     </div>
-
-    <form action="../../backend/database/insertdb.php" method="POST">
-        <input type="radio"  value="red" name="color">Rood
-        <input type="radio" value="purple" name="color">Paars
-        <input type="radio" value="navy" name="color">Donkerblauw
-        <input type="radio" value="blue" name="color">Blauw
-        <input type="radio" value="cyan" name="color">Cyaan
-        <input type="radio" value="teal" name="color">Groenblauw
-        <input type="radio" value="green" name="color">Groen
-        <input type="radio" value="yellow" name="color">Geel
-        <input type="radio" value="orange" name="color">Oranje
-        <input type="submit" name="colorsubmit">
-    </form>
-
 
 
 </main>
