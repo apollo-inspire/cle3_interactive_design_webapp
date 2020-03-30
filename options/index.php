@@ -12,20 +12,20 @@
 
 
 <main>
-    <div class="container">
-        <a href="admin-page" class="button2 item list">
+    <div >
+        <a href="admin-page" class="button2 item-list">
             Admin Panel
         </a>
-        <a href="admin-page" class="button2 item list">
-            Admin Panel
+        <a href="admin-page" class="button2 item-list">
+            Notifications
         </a>
-        <a href="admin-page" class="button2 item list">
+        <a href="admin-page" class="button2 item-list">
             Settings
         </a>
-        <a href="admin-page" class="button2 item list">
+        <a href="admin-page" class="button2 item-list">
             Terms and Conditions
         </a>
-        <a href="admin-page" class="button2 item list">
+        <a href="admin-page" class="button2 item-list">
             Login/Logout
         </a>
     </div>

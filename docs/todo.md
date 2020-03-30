@@ -1,13 +1,13 @@
 # CLE Front-End Dev
 
-- [ ] repo
+- [x] repo
 
-- [ ] filestructure
-- [ ]   backend
-- [ ]   css
-- [ ]   js
-- [ ]   html
-- [ ]   img
+- [x] filestructure
+- [X]   backend
+- [X]   css
+- [X]   js
+- [X]   html
+- [X]   img
 
 - [ ] css
 - [ ] mobile viewport (mobile & web css)
