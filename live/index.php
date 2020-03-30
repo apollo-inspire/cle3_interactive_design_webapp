@@ -13,6 +13,8 @@
 
 <main>
 
+    <h1>Playground</h1>
+
     <?php include '../includes/background.php'; ?>
 
     <div class="infobox big">
