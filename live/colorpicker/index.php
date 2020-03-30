@@ -28,16 +28,16 @@
         <a href="orange" class="button2 color" style="background-color: orange"></a>
     </div>
 
-    <form action="connect.php" method="POST">
+    <form action="../../backend/database/insertdb.php" method="POST">
         <input type="radio"  value="red" name="color">Rood
         <input type="radio" value="purple" name="color">Paars
-        <input type="radio" value="dark-blue" name="color">Donkerblauw
-        <input type="radio" value="red" name="color">Blauw
-        <input type="radio" value="red" name="color">Cyaan
-        <input type="radio" value="red" name="color">Groenblauw
-        <input type="radio" value="red" name="color">Groen
-        <input type="radio" value="red" name="color">Geel
-        <input type="radio" value="red" name="color">Oranje
+        <input type="radio" value="navy" name="color">Donkerblauw
+        <input type="radio" value="blue" name="color">Blauw
+        <input type="radio" value="cyan" name="color">Cyaan
+        <input type="radio" value="teal" name="color">Groenblauw
+        <input type="radio" value="green" name="color">Groen
+        <input type="radio" value="yellow" name="color">Geel
+        <input type="radio" value="orange" name="color">Oranje
         <input type="submit" name="colorsubmit">
     </form>
 
