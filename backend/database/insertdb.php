@@ -22,19 +22,26 @@ if (!isset($_POST['colorsubmit'])) {
         $huidigeKleur = $navy;
     } else if ($_POST['color'] == 'blue') {
         $huidigeKleur = $blue;
-    } else if ($_POST['color'] == 'blue') {
+    } else if ($_POST['color'] == 'cyan') {
         $huidigeKleur = $cyan;
-    } else if ($_POST['color'] == 'blue') {
-        $huidigeKleur = $blue;
-    } else if ($_POST['color'] == 'blue') {
-        $huidigeKleur = $blue;
+    } else if ($_POST['color'] == 'teal') {
+        $huidigeKleur = $teal;
+    } else if ($_POST['color'] == 'green') {
+        $huidigeKleur = $green;
+    } else if ($_POST['color'] == 'yellow') {
+        $huidigeKleur = $yellow;
+    } else if ($_POST['color'] == 'orange') {
+        $huidigeKleur = $orange;
     }
 
     print_r($huidigeKleur);
 
-    $query = "INSERT INTO color (current_color)
-              VALUES ('$huidigeKleur')
-              ON DUPLICATE KEY UPDATE
-                current_color = '$huidigeKleur'" ;
-//    $sql = "UPDATE color SET current_color = '$huidigeKleur'";
+    $sql = "UPDATE color SET current_color = '$huidigeKleur'";
+    $result = mysqli_query($db, $sql);
+    if ($result) {
+        mysqli_close($db);
+    } else {
+        print_r("er is iets fout gegaan");
+    }
+
 }

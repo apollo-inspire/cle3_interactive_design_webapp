@@ -13,9 +13,38 @@
 
 <main>
     <div class="container">
+        <a href="achievements" class="button2 item-list">
+            Achievements
+        </a>
+
+        <div class="infobox">
+            <p>total points</p>
+            <h2>3244</h2>
+        </div>
+
+        <div class="infobox">
+            <p>current points</p>
+            <h2>121</h2>
+        </div>
+
+        <div class="infobox">
+            <p>gained this week</p>
+            <h2>352</h2>
+        </div>
+
+        <div class="infobox graph">
+            <p>live points</p>
+            <p>this week</p>
+            <p>insert graph here</p>
+        </div>
+
+        <div class="infobox graph">
+            <p>total live points</p>
+            <p>this week</p>
+            <p>insert graph here</p>
+        </div>
+
         <div class="item grid">
-            <h1>Test</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto autem dicta dignissimos distinctio ducimus impedit labore odio, quasi quibusdam ratione sapiente soluta tenetur. Facere nihil officiis ut veniam. Iusto libero maxime qui rerum sunt? Aliquam amet architecto autem beatae consequatur consequuntur corporis eius enim fuga inventore ipsa iusto labore laboriosam maxime modi non nostrum numquam odio pariatur praesentium quaerat, quasi, qui quis quod repellendus reprehenderit sequi velit! Esse magnam nihil quod totam. A aspernatur beatae delectus distinctio dolorum, fuga fugiat hic in libero minus molestias necessitatibus nihil quia quo, quod rem voluptate. Aperiam cum expedita sapiente. Doloribus nam quasi repellat.</p>
         </div>
     </div>
 </main>
