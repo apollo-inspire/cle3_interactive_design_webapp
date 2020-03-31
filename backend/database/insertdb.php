@@ -44,4 +44,9 @@ if (!isset($_POST['colorsubmit'])) {
         print_r("er is iets fout gegaan");
     }
 
+    header('location: ../../live/index.php');
 }
+
+//header('../../live/index.php');
+
+
