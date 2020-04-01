@@ -79,11 +79,11 @@
             <input type="submit" name="colorsubmit" style="margin: 10px;">
             <div class="colorpicker-container">
 
-                <label class="checkmark-container ">
+                <label class="checkmark-container ">1
                     <input type="radio" value="red" name="color">
                     <span class="checkmark button2 color red"></span>
                 </label>
-                <label class="checkmark-container ">
+                <label class="checkmark-container ">1
                     <input type="radio" value="red" name="color">
                     <span class="checkmark button2 color red"></span>
                 </label>
