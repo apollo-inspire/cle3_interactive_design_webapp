@@ -34,18 +34,51 @@ if (!isset($_POST['colorsubmit'])) {
         $huidigeKleur = $orange;
     }
 
-    print_r($huidigeKleur);
+//    print_r($huidigeKleur);
 
-    $sql = "UPDATE color SET current_color = '$huidigeKleur'";
-    $result = mysqli_query($db, $sql);
-    if ($result) {
-        mysqli_close($db);
-    } else {
-        print_r("er is iets fout gegaan");
+    $selectPoints = "SELECT * FROM points";
+    $resultSelectPoints = mysqli_query($db, $selectPoints)
+    or die('Error '.mysqli_error($db).' with query '.$selectPoints);
+
+    $points = [];
+
+    while($row = mysqli_fetch_assoc($resultSelectPoints))
+    {
+        $points[] = $row;
     }
 
-    header('location: ../../live/index.php');
+    foreach ($points as $currentpoints){
+        print_r($currentpoints['current_points']);
+    }
+
+    if ($currentpoints['current_points'] > 0){
+        $setColor = "UPDATE color SET current_color = '$huidigeKleur'";
+        $result = mysqli_query($db, $setColor);
+        if ($result) {
+
+        } else {
+            print_r("er is iets fout gegaan");
+        }
+
+        $newPoints = $currentpoints['current_points'] - 1;
+
+        print_r($newPoints);
+
+        $setPoints = "UPDATE points SET current_points = '$newPoints'";
+        $result = mysqli_query($db, $setPoints);
+        if ($result) {
+            mysqli_close($db);
+        } else {
+            print_r("er is iets fout gegaan");
+        }
+
+        header('location: ../../live/index.php');
+    } else {
+        echo "Er zijn niet genoeg punten om de kleur te veranderen, gooi eerst wat afval weg";
+    }
 }
+
+
 
 //header('../../live/index.php');
 
