@@ -49,13 +49,15 @@ include '../includes/header/header_1down.php';
         <div class="item grid">
         </div>
     </div>
+
+    <?php include 'pie_chart.php'; ?>
 </main>
 
-<?php include 'pie_chart.php';
+
 
 //footer
 
-include '../includes/footer.php'; ?>
+<?php include '../includes/footer.php'; ?>
 
 </body>
 </html>

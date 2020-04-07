@@ -1,15 +1,15 @@
 <?php
 include 'connect.php';
 
-$red = "255,0,0";
-$purple = "128,0,128";
-$navy = "0,0,128";
-$blue = "0,0,255";
-$cyan = "0,255,255";
-$teal = "0,128,128";
-$green = "0,255,0";
-$yellow = "255,255,0";
-$orange = "255,165,0";
+$red = "red";
+$purple = "purple";
+$navy = "darkblue";
+$blue = "blue";
+$cyan = "cyan";
+$turquoise = "Turquoise ";
+$green = "green";
+$yellow = "yellow";
+$orange = "orange";
 
 if (!isset($_POST['colorsubmit'])) {
     header('location: index.php');
@@ -25,7 +25,7 @@ if (!isset($_POST['colorsubmit'])) {
     } else if ($_POST['color'] == 'cyan') {
         $huidigeKleur = $cyan;
     } else if ($_POST['color'] == 'teal') {
-        $huidigeKleur = $teal;
+        $huidigeKleur = $turquoise;
     } else if ($_POST['color'] == 'green') {
         $huidigeKleur = $green;
     } else if ($_POST['color'] == 'yellow') {
