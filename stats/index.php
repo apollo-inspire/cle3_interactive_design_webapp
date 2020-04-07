@@ -8,7 +8,9 @@
 <body>
 
 <!--header-->
-<?php include '../includes/header/header_1down.php'; ?>
+<?php
+include '../includes/header/header_1down.php';
+?>
 
 
 <main>
@@ -49,8 +51,11 @@
     </div>
 </main>
 
-<!--footer-->
-<?php include '../includes/footer.php'; ?>
+<?php include 'pie_chart.php';
+
+//footer
+
+include '../includes/footer.php'; ?>
 
 </body>
 </html>
