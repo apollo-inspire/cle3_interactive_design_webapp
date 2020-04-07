@@ -68,6 +68,19 @@ body {
     display: grid;
 }
 
+.infobox.big {
+    text-align: center;
+    font-size: 60px;
+    font-weight: bold;
+    background-color: #494949;
+    padding: 20px;
+    margin: 20px;
+    display: grid;
+
+    border-radius: 5px;
+
+    box-shadow: 4px 4px 5px rgba(0,0,0,0.5);
+}
 
 
 

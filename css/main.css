@@ -1,6 +1,6 @@
 main {
     /*background-color: #0a0a0a;*/
-    margin: var(--header-size) auto auto;
+    margin: calc(var(--header-size) + 10px) auto auto;
     width: 80%;
     padding: 2%;
     min-height: 80vh;
