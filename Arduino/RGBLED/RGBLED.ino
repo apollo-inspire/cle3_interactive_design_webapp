@@ -68,7 +68,7 @@ void loop() {
   FastLED.show();  
   FastLED.delay(1000/FRAMES_PER_SECOND); 
   
-  delay(6000); // wait n seconds before calling url again
+  delay(3000); // wait n seconds before calling url again
 
   Serial.print("connecting to ");
   Serial.println(host);

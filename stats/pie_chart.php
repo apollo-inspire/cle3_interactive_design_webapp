@@ -44,7 +44,7 @@ while($row = mysqli_fetch_assoc($result)) {
               ['Dark Blue', <?php print_r($colorStats['darkblue']) ?>],
               ['Blue', <?php print_r($colorStats['blue']) ?>],
               ['Cyan', <?php print_r($colorStats['cyan']) ?>],
-              ['Turquoise', <?php print_r($colorStats['turqoise']) ?>],
+              ['Turqoise', <?php print_r($colorStats['turqoise']) ?>],
               ['Green', <?php print_r($colorStats['green']) ?>],
               ['Yellow', <?php print_r($colorStats['yellow']) ?>],
               ['Orange', <?php print_r($colorStats['orange']) ?>]
@@ -55,8 +55,8 @@ while($row = mysqli_fetch_assoc($result)) {
           // Set chart options
           var options = {
                         'title':'Color popularity',
-                        'width':400,
-                        'height':300,
+                        'width':800,
+                        'height':600,
                         colors: ['#FF0000', '#800080', '#000080', '#0072FF', '#00FFFF', '#40E0D0', '#008000', '#FFFF00', '#FFA500']};
 
         // Instantiate and draw our chart, passing in some options.

@@ -1,3 +1,17 @@
+<?php
+
+    include "../backend/database/connect.php";
+
+    $selectPoints = "SELECT * FROM points";
+    $result = mysqli_query($db, $selectPoints);
+
+    $points = [];
+
+    while($row = mysqli_fetch_assoc($result)){
+        $points = $row;
+    }
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,12 +35,12 @@ include '../includes/header/header_1down.php';
 
         <div class="infobox">
             <p>total points</p>
-            <h2>3244</h2>
+            <h2><?php print_r($points['total_points'])?></h2>
         </div>
 
         <div class="infobox">
             <p>current points</p>
-            <h2>121</h2>
+            <h2><?php print_r($points['current_points']) ?></h2>
         </div>
 
         <div class="infobox">

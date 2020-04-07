@@ -6,7 +6,7 @@ $purple = "purple";
 $navy = "darkblue";
 $blue = "blue";
 $cyan = "cyan";
-$turquoise = "Turquoise ";
+$turqoise = "turqoise";
 $green = "green";
 $yellow = "yellow";
 $orange = "orange";
@@ -25,7 +25,7 @@ if (!isset($_POST['colorsubmit'])) {
     } else if ($_POST['color'] == 'cyan') {
         $huidigeKleur = $cyan;
     } else if ($_POST['color'] == 'teal') {
-        $huidigeKleur = $turquoise;
+        $huidigeKleur = $turqoise;
     } else if ($_POST['color'] == 'green') {
         $huidigeKleur = $green;
     } else if ($_POST['color'] == 'yellow') {
@@ -49,14 +49,30 @@ if (!isset($_POST['colorsubmit'])) {
     }
 
     foreach ($points as $currentpoints){
-        print_r($currentpoints['current_points']);
     }
 
     if ($currentpoints['current_points'] > 0){
         $setColor = "UPDATE color SET current_color = '$huidigeKleur'";
         $result = mysqli_query($db, $setColor);
         if ($result) {
+            $selectStatColor = "SELECT * FROM statistics";
+            $result = mysqli_query($db, $selectStatColor);
 
+            while($row = mysqli_fetch_assoc($result)) {
+                $currentColorStat = $row;
+            }
+
+            print_r($currentColorStat[$huidigeKleur]);
+
+            $newColorStat = $currentColorStat[$huidigeKleur] + 1;
+
+            $setNewColorStat = "UPDATE statistics SET $huidigeKleur = '$newColorStat'";
+            $result = mysqli_query($db, $setNewColorStat);
+            if ($result) {
+
+            } else {
+                print_r("er is iets fout gegaan");
+            }
         } else {
             print_r("er is iets fout gegaan");
         }
@@ -83,4 +99,4 @@ if (!isset($_POST['colorsubmit'])) {
 
 //header('../../live/index.php');
 
-
+?>
