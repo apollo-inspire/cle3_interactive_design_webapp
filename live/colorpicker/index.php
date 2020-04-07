@@ -41,8 +41,6 @@
         <input type="submit" name="colorsubmit">
     </form>
 
-
-
 </main>
 
 <!--footer-->

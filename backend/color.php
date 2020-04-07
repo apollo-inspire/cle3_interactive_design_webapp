@@ -17,6 +17,8 @@
         print_r($currentColor['current_color']);
     }
 
+
+
 //    if ($result) {
 //        mysqli_close($db);
 //

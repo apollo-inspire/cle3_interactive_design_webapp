@@ -34,7 +34,8 @@ if (!isset($_POST['colorsubmit'])) {
         $huidigeKleur = $orange;
     }
 
-//    print_r($huidigeKleur);
+
+
 
     $selectPoints = "SELECT * FROM points";
     $resultSelectPoints = mysqli_query($db, $selectPoints)
