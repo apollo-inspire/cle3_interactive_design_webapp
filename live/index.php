@@ -3,12 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <link href="../css/style.css" type="text/css" rel="stylesheet">
+    <link href="../css/background.css" type="text/css" rel="stylesheet">
     <title>LEDopafval</title>
 </head>
 <body>
 
 <!--header-->
 <?php include '../includes/header/header_1down.php'; ?>
+
+
 
 
 <main>

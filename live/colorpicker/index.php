@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link href="../../css/style.css" type="text/css" rel="stylesheet">
+    <link href="../../css/background.css" type="text/css" rel="stylesheet">
     <title>LEDopafval</title>
 </head>
 <body>
@@ -13,20 +14,8 @@
 
 <main>
 
-    <h1>Colorpicker</h1>
-    <?php include '../../includes/background.php'; ?>
+    <div class="background"></div>
 
-    <div class="colorpicker">
-        <a href="red" class="button2 color" style="background-color: red"></a>
-        <a href="purple" class="button2 color" style="background-color: purple"></a>
-        <a href="dark-blue" class="button2 color" style="background-color: darkblue"></a>
-        <a href="blue" class="button2 color" style="background-color: blue"></a>
-        <a href="cyan" class="button2 color" style="background-color: cyan"></a>
-        <a href="teal" class="button2 color" style="background-color: teal"></a>
-        <a href="green" class="button2 color" style="background-color: green"></a>
-        <a href="yellow" class="button2 color" style="background-color: yellow"></a>
-        <a href="orange" class="button2 color" style="background-color: orange"></a>
-    </div>
 
     <form action="../../backend/database/insertdb.php" method="POST">
         <input type="radio"  value="red" name="color">Rood
@@ -40,6 +29,7 @@
         <input type="radio" value="orange" name="color">Oranje
         <input type="submit" name="colorsubmit">
     </form>
+
 
 </main>
 
