@@ -1,4 +1,5 @@
 <?php
+ // FOR SHOWCASE 04-07 NO DATABASE
 
     include "../backend/database/connect.php";
 
